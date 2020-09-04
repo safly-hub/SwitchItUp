@@ -1,12 +1,20 @@
 ﻿using System;
 
-namespace SwitchItUp
+public static class Kata
 {
-  class Program
-  {
-    static void Main(string[] args)
+    public static string Greet(string name)
     {
-      Console.WriteLine("Welcome to C#");
+        return $"Hello, {name} how are you doing today?";
     }
-  }
+}
+
+public class Kata
+{
+    public static string SwitchItUp(int number)
+    {
+        string[] numbers =
+                    { "Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten" };
+
+        return numbers[number];
+    }
 }
